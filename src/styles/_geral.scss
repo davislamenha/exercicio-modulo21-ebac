@@ -1,3 +1,8 @@
+// GERAL
+body {
+  background-color: $corTextoEscura;
+}
+
 .container {
   width: min(100% - 30px, 1440px);
   margin: 0 auto;
@@ -8,7 +13,8 @@ img {
   max-width: 100%;
 }
 
-.button {
+.btn {
+  display: inline-block;
   background-color: $corPrincipalClara;
   color: $corTextoClara;
   padding: 8px 16px;
@@ -40,5 +46,109 @@ img {
       background-color: $corPrincipalClara;
       color: $corTextoClara;
     }
+  }
+}
+
+// TEXT
+.color--primary {
+  color: $corPrincipalClara;
+}
+
+.color--light {
+  color: $corTextoClara;
+}
+
+.color--medium {
+  color: $corTextoMedia;
+}
+
+.color--dark {
+  color: $corTextoEscura;
+}
+
+//TITLE
+.title--bg {
+  background-color: $corSecundariaEscura;
+  padding: 12px 0;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.title--big {
+  font-size: 48px;
+  font-weight: 700;
+
+  @include tela(tablet) {
+    font-size: 32px;
+  }
+
+  @include tela(mobile) {
+    font-size: 28px;
+  }
+}
+
+.title {
+  font-size: 40px;
+  font-weight: 700;
+
+  @include tela(tablet) {
+    font-size: 28px;
+  }
+
+  @include tela(mobile) {
+    font-size: 24px;
+  }
+}
+
+.title--small {
+  font-size: 32px;
+  font-weight: 700;
+
+  @include tela(tablet) {
+    font-size: 24px;
+  }
+
+  @include tela(mobile) {
+    font-size: 20px;
+  }
+}
+
+// ORDINARY
+.text--big {
+  font-size: 28px;
+  font-weight: 400;
+
+  @include tela(tablet) {
+    font-size: 24px;
+  }
+
+  @include tela(mobile) {
+    font-size: 20px;
+  }
+}
+
+.text {
+  font-size: 20px;
+  font-weight: 400;
+
+  @include tela(tablet) {
+    font-size: 16px;
+  }
+
+  @include tela(mobile) {
+    font-size: 14px;
+  }
+}
+
+.text--small {
+  font-size: 16px;
+  font-weight: 400;
+
+  @include tela(tablet) {
+    font-size: 14px;
+  }
+
+  @include tela(mobile) {
+    font-size: 12px;
   }
 }

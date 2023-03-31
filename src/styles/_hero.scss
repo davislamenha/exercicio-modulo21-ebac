@@ -1,0 +1,38 @@
+.hero {
+  position: relative;
+  background: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0) 20%,
+      $corTextoEscura
+    ),
+    url(../img/naruto_background.png) no-repeat center top;
+  background-size: cover;
+  min-height: calc(100vh - 96px);
+
+  @include tela(tablet) {
+    min-height: calc(100vh - 76px);
+  }
+
+  @include tela(mobile) {
+    min-height: calc(100vh - 128px);
+  }
+
+  &__content {
+    padding: 0 15px;
+    position: absolute;
+    bottom: 5vh;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    border-radius: 5px;
+    text-align: center;
+
+    h2 {
+      margin-bottom: 8px;
+    }
+
+    p {
+      margin-bottom: 12px;
+    }
+  }
+}
