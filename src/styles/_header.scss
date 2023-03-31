@@ -1,0 +1,28 @@
+.header {
+  background-color: $corSecundariaEscura;
+  padding: 8px 0;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include tela(mobile) {
+      flex-direction: column;
+      gap: 12px;
+      padding-bottom: 12px;
+    }
+  }
+  &__logo {
+    height: 80px;
+
+    @include tela(tablet) {
+      height: 60px;
+    }
+  }
+
+  &__links {
+    display: flex;
+    gap: 12px;
+  }
+}

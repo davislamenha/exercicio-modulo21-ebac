@@ -1,0 +1,44 @@
+.container {
+  width: min(100% - 30px, 1440px);
+  margin: 0 auto;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.button {
+  background-color: $corPrincipalClara;
+  color: $corTextoClara;
+  padding: 8px 16px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-size: 16px;
+  transition: background-color, 0.5s all;
+
+  @include tela(tablet) {
+    padding: 6px 12px;
+    font-size: 14px;
+  }
+
+  @include tela(mobile) {
+    padding: 4px 8px;
+    font-size: 12px;
+  }
+
+  &:hover {
+    background-color: $corPrincipalEscura;
+  }
+
+  &--outline {
+    background-color: rgba($corSecundariaEscura, 0.8);
+    color: $corPrincipalClara;
+    border: 2px solid $corPrincipalClara;
+
+    &:hover {
+      background-color: $corPrincipalClara;
+      color: $corTextoClara;
+    }
+  }
+}

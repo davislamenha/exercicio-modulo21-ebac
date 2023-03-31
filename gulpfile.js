@@ -24,7 +24,7 @@ function images() {
     .pipe(gulp.dest('./dist/img'));
 }
 
-exports.default = gulp.parallel(styles, scripts, imagemin);
+exports.default = gulp.parallel(styles, scripts, images);
 exports.watch = function () {
   gulp.watch('./src/styles/*.scss', gulp.parallel(styles));
   gulp.watch('./src/scripts/*.js', gulp.parallel(scripts));

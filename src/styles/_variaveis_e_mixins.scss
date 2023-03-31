@@ -1,0 +1,23 @@
+// CORES
+$corPrincipalClara: #ff793f;
+$corPrincipalEscura: #cd6133;
+$corSecundariaClara: #273c75;
+$corSecundariaEscura: #192a56;
+$corTextoClara: #f5f6fa;
+$corTextoEscura: #2f3640;
+
+// RESPONSIVO
+$tablet: 767px;
+$mobile: 424px;
+
+@mixin tela($tamanho) {
+  @if $tamanho == tablet {
+    @media (max-width: #{$tablet}) {
+      @content;
+    }
+  } @else if $tamanho == mobile {
+    @media (max-width: #{$mobile}) {
+      @content;
+    }
+  }
+}
