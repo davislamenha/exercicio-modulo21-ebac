@@ -1,0 +1,27 @@
+{
+  "name": "exercicio",
+  "version": "1.0.0",
+  "description": "> Exercício desenvolvido para prática dos assuntos abordados até o momento.",
+  "main": "index.js",
+  "scripts": {
+    "build": "gulp",
+    "dev": "gulp watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davislamenha/exercicio-modulo21-ebac.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/davislamenha/exercicio-modulo21-ebac/issues"
+  },
+  "homepage": "https://github.com/davislamenha/exercicio-modulo21-ebac#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-uglify": "^3.0.2",
+    "sass": "^1.60.0"
+  }
+}
