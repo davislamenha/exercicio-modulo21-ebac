@@ -9,7 +9,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
   <link rel="stylesheet" href="./dist/css/main.css">
+
 </head>
 
 <body>
@@ -33,6 +35,7 @@
 
   <section class="characters">
     <h2 class="title title--bg color--primary">Personagens</h2>
+    <p class="text color--medium">Vários personagens icônicos para você conhecer</p>
     <div class="characters__content container">
       <ul class="characters__list">
         <li class="characters__list__character">
@@ -89,18 +92,102 @@
 
   <section class="battles">
     <img src="./dist/img/naruto_background2.jpg" alt="Naruto e Sasuke">
-
     <div class="battles__content container">
       <h2 class="title color--light">Batalhas incríveis</h2>
       <p class="text color--medium">Lutas icônicas que fazem os fãs suspirarem. São várias lutas durante todo o Anime, muitas delas vão te trazer muitas emoções a tona, pois o enredo de Naruto é muito cativante. Veja batalhas com de jutsus incríveis durante a evolução das gerações dos Shinobi da Vila Oculta da Folha.</p>
       <a class="btn" href="#">Assista online</a>
       <img class="rotation" src="./dist/img/clans/Uzumaki_Symbol.svg" alt="Simbolo do Clan Uzumaki">
     </div>
+  </section>
+
+  <section class="geo">
+
+    <h2 class="title title--bg color--primary">Geografia</h2>
+    <p class="text color--medium">Um mundo vasto com diversos paises, vilarejos e clãs. Conheça alguns deles.</p>
+    <nav class="geo__tab">
+      <button data-tab="clans" class="geo__tab__btn geo__tab__btn--active btn btn--outline" href="#">Clãs</button>
+      <button data-tab="villages" class="geo__tab__btn btn btn--outline" href="#">Vilarejos</button>
+    </nav>
+
+
+    <ul data-tab-id="clans" class="geo__list geo__list--active container">
+      <li class="geo__list__item">
+        <img src="./dist/img/clans/Uzumaki_Symbol.svg" alt="Simbolo do Clã Uzumaki">
+        <h4 class="title--small color--light">Clã Uzumaki</h4>
+      </li>
+
+      <li class="geo__list__item">
+        <img src="./dist/img/clans/Uchiha_Symbol.svg" alt="Simbolo do Clã Uchiha">
+        <h4 class="title--small color--light">Clã Uchiha</h4>
+      </li>
+
+      <li class="geo__list__item">
+        <img src="./dist/img/clans/Sarutobi_Symbol.svg" alt="Simbolo do Clã Sarutobi">
+        <h4 class="title--small color--light">Clã Sarutobi</h4>
+      </li>
+
+      <li class="geo__list__item">
+        <img src="./dist/img/clans/Hyūga_Symbol.svg" alt="Simbolo do Clã Hyūga">
+        <h4 class="title--small color--light">Clã Hyūga</h4>
+      </li>
+
+      <li class="geo__list__item">
+        <img src="./dist/img/clans/Hatake_Symbol.svg" alt="Simbolo do Clã Hatake">
+        <h4 class="title--small color--light">Clã Hatake</h4>
+      </li>
+
+      <li class="geo__list__item">
+        <img src="./dist/img/clans/Aburame_Symbol.svg" alt="Simbolo do Clã Aburame">
+        <h4 class="title--small color--light">Clã Aburame</h4>
+      </li>
+    </ul>
+
+
+
+
+    <ul data-tab-id="villages" class="geo__list container">
+      <li class="geo__list__item">
+        <img src="./dist/img/villages/Konohagakure_Symbol.svg" alt="Simbolo da Vila Oculta da Folha">
+        <h4 class="title--small color--light">Vila Oculta da Folha</h4>
+        <p class="text color--primary">País do Fogo</p>
+      </li>
+
+      <li class="geo__list__item">
+        <img src="./dist/img/villages/Iwagakure_Symbol.svg" alt="Simbolo da Vila Oculta da Pedra">
+        <h4 class="title--small color--light">Vila Oculta da Pedra</h4>
+        <p class="text color--primary">País da Terra</p>
+      </li>
+
+      <li class="geo__list__item">
+        <img src="./dist/img/villages/Kirigakure_Symbol.svg" alt="Simbolo da Vila Oculta da Névoa">
+        <h4 class="title--small color--light">Vila Oculta da Névoa</h4>
+        <p class="text color--primary">País da Água</p>
+      </li>
+
+      <li class="geo__list__item">
+        <img src="./dist/img/villages/Kumogakure_Symbol.svg" alt="Simbolo da Vila Oculta da Nuvem">
+        <h4 class="title--small color--light">Vila Oculta da Nuvem</h4>
+        <p class="text color--primary">País do Relâmpago</p>
+      </li>
+
+      <li class="geo__list__item">
+        <img src="./dist/img/villages/Otogakure_Symbol.svg" alt="Simbolo da Vila Oculta do Som">
+        <h4 class="title--small color--light">Vila Oculta do Som</h4>
+        <p class="text color--primary">País do Som</p>
+      </li>
+      <li class="geo__list__item">
+        <img src="./dist/img/villages/Sunagakure_Symbol.svg" alt="Simbolo da Vila Oculta da Areia">
+        <h4 class="title--small color--light">Vila Oculta da Areia</h4>
+        <p class="text color--primary">País do Vento</p>
+      </li>
+
+    </ul>
 
 
 
   </section>
 
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
   <script type="text/javascript" src="./dist/js/main.js"></script>
 </body>
 
