@@ -19,6 +19,7 @@
   "homepage": "https://github.com/davislamenha/exercicio-modulo21-ebac#readme",
   "devDependencies": {
     "gulp": "^4.0.2",
+    "gulp-htmlmin": "^5.0.1",
     "gulp-imagemin": "^7.1.0",
     "gulp-sass": "^5.1.0",
     "gulp-uglify": "^3.0.2",
