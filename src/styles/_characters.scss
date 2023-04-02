@@ -1,6 +1,6 @@
 .characters {
   background-color: lighten($corTextoEscura, 3%);
-  padding: 80px 0 40px;
+  padding: 40px 0 80px;
 
   h2 {
     text-align: center;
@@ -12,23 +12,38 @@
     margin-bottom: 40px;
   }
 
-  &__list {
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 350px));
-    justify-content: center;
-    gap: 24px;
+  .swiper {
+    padding-left: 50px;
+    padding-right: 50px;
+    width: 500px;
+    height: 560px;
 
-    @include tela(tablet) {
-      grid-template-columns: repeat(auto-fit, minmax(260px, 300px));
+    &-pagination {
+      span {
+        background-color: $corPrincipalClara;
+      }
     }
 
-    &__character {
-      transition: box-shadow, 0.5s all;
+    &-button-prev,
+    &-button-next {
+      color: $corPrincipalClara;
+    }
 
-      &:hover {
-        box-shadow: $corSecundariaEscura 0px 5px 15px;
-      }
+    @include tela(tablet) {
+      width: 400px;
+      height: 500px;
+    }
+
+    @include tela(mobile) {
+      width: 320px;
+    }
+  }
+
+  &__list {
+    width: 100%;
+
+    &__character {
+      width: 350px;
 
       img {
         width: 100%;
@@ -39,7 +54,7 @@
 
       &__content {
         background-color: $corSecundariaEscura;
-        padding: 12px;
+        padding: 12px 20px;
         border-radius: 0 0 5px 5px;
         height: 320px;
 

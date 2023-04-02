@@ -5,6 +5,17 @@ document.addEventListener('DOMContentLoaded', function () {
   tab.forEach(function (btn) {
     btn.addEventListener('click', ativarTabEBtn);
   });
+
+  const swiper = new Swiper('.swiper', {
+    effect: 'cube',
+    pagination: {
+      el: '.swiper-pagination',
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
 });
 
 // FUNÇÃO PARA ATIVAR O CONTEUDO DA ABA E DO BOTAO CLICADO
