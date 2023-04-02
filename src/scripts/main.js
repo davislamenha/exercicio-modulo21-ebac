@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', function () {
     btn.addEventListener('click', ativarTabEBtn);
   });
 
+  // SLIDER DA SEÇÃO PERSONAGENS
   const swiper = new Swiper('.swiper', {
     effect: 'cube',
     pagination: {
