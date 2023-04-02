@@ -13,6 +13,7 @@ img {
   max-width: 100%;
 }
 
+// BOTÃO
 .btn {
   cursor: pointer;
   display: inline-block;
@@ -46,6 +47,41 @@ img {
     &:hover {
       background-color: $corPrincipalClara;
       color: $corTextoClara;
+    }
+  }
+}
+
+// SEÇÃO PADRÃO BACKGROUND
+.img-background {
+  padding-bottom: 40px;
+
+  &__content {
+    position: relative;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    h2 {
+      margin-bottom: 8px;
+    }
+
+    p {
+      max-width: 40ch;
+      margin-bottom: 20px;
+    }
+
+    img {
+      display: none;
+      position: absolute;
+      bottom: calc(50% - 90px);
+      right: 10vw;
+      width: 140px;
+      height: auto;
+
+      @media (min-width: 1200px) {
+        display: block;
+      }
     }
   }
 }
