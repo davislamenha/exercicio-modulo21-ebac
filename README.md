@@ -7,6 +7,9 @@
 > Exercício desenvolvido para prática dos assuntos abordados até o momento.
 
 - O objetivo foi criar uma landing page.
+  - Foi utilizado HTML, SASS e Javascript.
+  - Para o slider foi utilizado o plugin Swiper js.
+  - Para automatizar a minificação de html, sass, js e imagens, foi utilizado o Gulp.
 
 ## Meta
 
