@@ -1,0 +1,24 @@
+.footer {
+  background-color: $corSecundariaEscura;
+  padding: 12px 0;
+  &__container {
+    display: flex;
+    gap: 24px;
+    justify-content: space-between;
+    align-items: center;
+
+    @include tela(mobile) {
+      flex-wrap: wrap;
+      justify-content: center;
+      text-align: center;
+    }
+
+    img {
+      height: 80px;
+
+      @include tela(tablet) {
+        height: 60px;
+      }
+    }
+  }
+}
