@@ -47,11 +47,20 @@
       flex-direction: column;
       text-align: center;
 
+      @include tela(mobile) {
+        width: 180px;
+        height: 220px;
+      }
+
       img {
         max-width: 260px;
         height: 180px;
         margin-bottom: 12px;
         margin: auto;
+
+        @include tela(mobile) {
+          height: 80px;
+        }
       }
 
       h4 {
